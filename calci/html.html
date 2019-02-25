@@ -1,0 +1,79 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="./css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.5.0/math.js" charset="utf-8"></script>
+    <script src="./js.js" charset="utf-8"></script>
+    <title>Calculator</title>
+  </head>
+  <body onload="setWindow('')">
+        <table border="1" id="outer">
+            <tr>
+                <th colspan="4" id="window"></th>
+            </tr>
+            <tr>
+                 <td>
+                     <button class="button" id="7" onclick="updateWindow('7')">7</button> 
+                 </td>
+
+                <td>
+                    <button class="button" id="8" onclick="updateWindow('8')">8</button>
+                </td>
+                <td>
+                     <button class="button" id="9" onclick="updateWindow('9')">9</button>
+                </td>
+                <td>
+                    <button class="button" id = "+" onclick="updateWindow('+')">+</button>
+                </td>
+            </tr>
+             <tr>
+                 <td>
+                     <button class="button" id="Button1" onclick="updateWindow('4')">4</button> 
+                 </td>
+
+                <td>
+                    <button class="button" id="Button2" onclick="updateWindow('5')">5</button>
+                </td>
+                <td>
+                     <button class="button" id="Button3" onclick="updateWindow('6')">6</button>
+                </td>
+                <td>
+                    <button class="button" id = "Button4" onclick="updateWindow('-')">-</button>
+                </td>
+            </tr>
+             <tr>
+                 <td>
+                     <button class="button" id="Button5" onclick="updateWindow('1')">1</button> 
+                 </td>
+
+                <td>
+                    <button class="button" id="Button6" onclick="updateWindow('2')">2</button>
+                </td>
+                <td>
+                     <button class="button" id="Button7" onclick="updateWindow('3')">3</button>
+                </td>
+                <td>
+                    <button class="button" id = "Button8" onclick="updateWindow('*')">*</button>
+                </td>
+            </tr>
+             <tr>
+                 <td>
+                    <button class="button" id="Button9" onclick="clc()">C</button>
+                 </td>
+
+                <td>
+                   <button class="button" id="Button10" onclick="updateWindow('0')">0</button>
+                </td>
+                <td>
+                      <button class="button" id="Button11" onclick="solve()">=</button>
+                </td>
+                <td>
+                   <button class="button" id = "Button12" onclick="updateWindow('/')">/</button>
+                </td>
+            </tr>
+        </table>
+     
+     
+      
+  </body>
+</html>
