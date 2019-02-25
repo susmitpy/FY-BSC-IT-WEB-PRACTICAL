@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.5.0/math.js" charset="utf-8"></script>
+    <script src="./js.js" charset="utf-8"></script>
+    <title>Calculator</title>
+  </head>
+  <body onload="setWindow('')">
+    <div id = "outer">
+      <div id = "window"> </div>
+      <button class="button" id="7" onclick="updateWindow('7')">7</button>
+      <button class="button" id="8" onclick="updateWindow('8')">8</button>
+      <button class="button" id="9" onclick="updateWindow('9')">9</button>
+      <button class="button" id = "+" onclick="updateWindow('+')">+</button>
+      <br>
+      <button class="button" id="4" onclick="updateWindow('4')">4</button>
+      <button class="button" id="5" onclick="updateWindow('5')">5</button>
+      <button class="button" id="6" onclick="updateWindow('6')">6</button>
+      <button class="button" id = "-" onclick="updateWindow('-')">-</button>
+      <br>
+      <button class="button" id="1" onclick="updateWindow('1')">1</button>
+      <button class="button" id="2" onclick="updateWindow('2')">2</button>
+      <button class="button" id="3" onclick="updateWindow('3')">3</button>
+      <button class="button" id = "*" onclick="updateWindow('*')">*</button>
+      <br>
+      <button class="button" id="C" onclick="clc()">C</button>
+      <button class="button" id="0" onclick="updateWindow('0')">0</button>
+      <button class="button" id="=" onclick="solve()">=</button>
+      <button class="button" id = "/" onclick="updateWindow('/')">/</button>
+    </div>
+  </body>
+</html>
