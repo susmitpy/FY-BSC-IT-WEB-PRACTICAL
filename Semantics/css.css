@@ -1,0 +1,71 @@
+﻿header {
+    color: blue;
+    border: 5px solid aqua;
+    text-align:center;
+}
+
+aside {
+    position: relative;
+    left: 0;
+}
+
+h3 {
+  color: blue;
+}
+
+p {
+ color: blue
+}
+
+
+article {
+    position: relative;
+    left:60;
+    bottom:250;
+    text-align:center;
+    margin-left:120;
+    border: 3px ridge aqua;
+
+    width:1000;
+}
+
+section
+ {
+    position: relative;
+    left: 60;
+    bottom:150;
+    text-align:center;
+    margin-left:120;
+    border: 3px ridge aqua;
+    right:200;
+   width:1000; 
+}
+
+li {
+    text-align: left;
+    color: royalblue;
+}
+
+ol 
+{
+    font-size:20;
+}
+
+nav
+ {
+    border: 6px ridge aqua;
+    text-align:center;
+    padding:10;
+    word-spacing:20;   
+    position:relative;
+    left:7;
+    right:200;
+}
+
+
+footer
+ {
+    text-align:right;
+}
+
+
