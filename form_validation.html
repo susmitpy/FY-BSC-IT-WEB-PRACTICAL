@@ -6,7 +6,7 @@
         {
             var f = document.myform;
 
-            /*
+            
             var n = f.name;      
             if (n.value == "") {
                 alert("Please enter your name");
@@ -30,12 +30,18 @@
             if (f.city.selectedIndex < 1) {
                 alert("Please select the city");
             }
-            */
+            
             var e = f.email;
             var atpos = e.value.indexOf("@");
        
             if (e.value == "" || atpos < 1) {
                 alert("Enter your Email ID ");
+            }
+
+            var dot = e.lastIndexOf('.');
+            if ((dot - atpos) >= 2)
+            {
+                alert("Incorrect Email Id");
             }
 
         }
