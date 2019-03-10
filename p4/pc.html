@@ -1,0 +1,82 @@
+﻿
+<html>
+<head>
+    <title>JS Objects</title>
+    <script type="text/javascript">
+        function array() {
+
+            var fruits = ["apple", "orange", "mango"];
+            document.write("<br>Array: " + fruits);
+            document.write("<br> Length: " + fruits.length);
+            document.write("<br> String: " + fruits.toString());
+            document.write("<br>Conactenated: " + fruits.concat("kiwi"));
+            document.write("<br>Index of orange: " + fruits.indexOf("orange"));
+            document.write("<br> Sorted: " + fruits.sort());
+        }
+
+        function getdate() {
+            document.write("<br>Date: " + d.getDate());
+            document.write("<br>Day: " + d.getDay());
+            document.write("<br>Full Year: " + d.getFullYear());
+            document.write("<br>Month: " + d.getMonth());
+            document.write("<br>Hours: " + d.getHours());
+        }
+        function setdate() {
+            d = new Date();
+            d.setDate(3);
+            d.setMinutes(1);
+            d.setFullYear(2000);
+            d.setMonth(9);
+            d.setHours(22);
+        }
+        function math() {
+            document.write("<br>Pi: " + Math.PI);
+            document.write("<br>sin(30):  " + Math.sin(30));
+            document.write("<br>Absolute of -30:  " + Math.abs(-30));
+            document.write("<br>sqrt(64):  " + Math.sqrt(64));
+            document.write("<br>pow(2,2):  " + Math.pow(2,2));
+        }
+        function string() {
+            var s = new String("Web");
+            document.write("<br>Web + Web:  " + s.concat(s));
+            document.write("<br>To Uppercase:  " + s.toUpperCase());
+            document.write("<br>Character at 1:  " + s.charAt(1));
+            document.write("<br>To Lowercase:  " + s.toLowerCase());
+            document.write("<br>Replace e with m:  " + s.replace(/e/, 'm'));
+        }
+        function boolean() {
+            var b = Boolean(10 > 9);
+            if (b) {
+                document.write("<br>10 is greater");
+            } else {
+                document.write("9 is greater");
+            }
+        }
+
+        function number() {
+            n = Number(2.3145);
+            document.write("<br>Number To Fixed:  " + n.toFixed(2));
+            document.write("<br>Number To String:  " + n.toString());
+            document.write("<br>Number To Exponential:  " + n.toExponential());
+            document.write("<br>Number Value Of:  " + n.valueOf());
+            document.write("<br>Number To Precision:  " + n.toPrecision());
+
+        }
+
+            function stuff() {
+                document.write("Button Clicked");
+                array();
+                setdate();
+                getdate();
+                math();
+                string();
+                boolean();
+                number();
+                
+            }
+    </script>
+</head>
+<body>
+    <button onclick="stuff()">Click Me</button>
+</body>
+</html>
