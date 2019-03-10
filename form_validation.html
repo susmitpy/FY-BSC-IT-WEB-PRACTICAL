@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    <title>Form Validation</title>
+    <script type="text/javascript">
+        function val()
+        {
+            var f = document.myform;
+
+            /*
+            var n = f.name;      
+            if (n.value == "") {
+                alert("Please enter your name");
+            }
+            if (f.pass.value != f.cpass.value) {
+                alert("Password does not match");
+            }
+            if (f.pass.value.length <= 3) {
+                alert("Password should be atleast 4 characters long");
+            }
+            
+            var m = f.mobno.value;
+            if (m.length != 10 || isNaN(m)) {
+                alert("Please enter mobile number correctly");
+            }
+
+            if (!f.c1.checked) {
+                alert("Please tick the checkbox");
+            }
+            
+            if (f.city.selectedIndex < 1) {
+                alert("Please select the city");
+            }
+            */
+            var e = f.email;
+            var atpos = e.value.indexOf("@");
+       
+            if (e.value == "" || atpos < 1) {
+                alert("Enter your Email ID ");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="val()">
+        Name: <input name="name">
+        <br>
+        Password: <input type="password" name="pass">
+        <br>
+        Confirm Password: <input type="password" name="cpass">
+        <br>
+        Email ID: <input name="email">
+        <br>
+        Mobile Number: <input name="mobno" maxlength="10">
+        <br>
+        <input type="checkbox" name="c1" value="c1"> Please tick the checkbox 
+        <br>
+        City: <select name="city">
+            <option>Select</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="thane">Thane</option>
+              </select>
+        <br>    
+       
+        <input type="submit">
+    </form>
+</body>
+</html>
