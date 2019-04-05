@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Form</title>
+        <!-- Only for those who want to know the JS for checkboxes that are
+        selected...
+        for(i=0;i<3;i++)
+        {
+	       if (document.forms["myForm"]["hobby"][i].checked)
+	       {
+		     console.log("Selected: " + document.forms["myForm"]["hobby"][i].value)
+	       }
+       }   -->
+    </head>
+    <body>
+        <form name="myForm">
+            Name: <input name="name">
+            <br>
+            Password: <input type="password" name="passw">
+            <br>
+            Gender:
+            <input type="radio" name="gen" value="M">Male
+            &nbsp;
+            <input type="radio" name="gen" value="F">Female
+            <br>
+            Hobbies:
+            <input type="checkbox" name="hobby" value="R">Reading
+            <input type="checkbox" name="hobby" value="Si">Singing
+            <input type="checkbox" name="hobby" value="Sp">Sports
+            <br>
+            Favourite Color:
+            <select name="color">
+                <option value="R"> Red
+                <option value="G"> Green
+                <option value="B"> Blue
+            </select>
+            <br>
+            <input type="submit"> &nbsp;
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
